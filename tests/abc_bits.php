@@ -1,6 +1,9 @@
 <?php
-
-require_once dirname(__FILE__).'/../IO/SWF/ABC/Bit.php';
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require_once(__DIR__ . '/../vendor/autoload.php');
+} else {
+    require_once dirname(__FILE__).'/../IO/SWF/ABC/Bit.php';
+}
 
 // https://ja.osdn.net/projects/happyabc/scm/git/happyabc/blobs/master/swflib/bytesOutTest.ml
 
